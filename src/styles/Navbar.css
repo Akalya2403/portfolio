@@ -1,0 +1,116 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  height: 3rem;
+  padding: 1rem 1rem;
+  background-color: #a8bfe5e7;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: rgba(15, 22, 63, 0.84);
+  display: flex;
+  align-items: center;
+}
+
+.compLogo {
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin: 0;
+  padding-right: 1.5rem;
+}
+
+.nav-links a {
+  color: rgba(29, 29, 137, 0.562);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  color: rgb(20, 20, 103);
+  text-decoration: underline;
+}
+
+
+.menuIcon {
+  display: none;
+  width: 30px;
+  cursor: pointer;
+}
+
+
+.menuBox {
+  position: fixed;
+  top: 3.5rem;
+  right: 1rem;
+  width: 110px;
+  height: 140px;
+  background-image: radial-gradient(white, rgb(229, 227, 227));
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+
+.menuBox.show {
+  display: flex;
+}
+
+.listItems {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItems li {
+  padding: 3px 0;
+}
+
+.listItems li a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+
+.listItems li a:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+
+@media (max-width: 580px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+}
