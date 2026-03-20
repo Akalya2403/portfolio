@@ -11,9 +11,10 @@ import Footer from "./components/Footer";
 
 
 function App() {
+
   return (
     <div>
-      <h1 style={{color:"red"}}>hello</h1>
+     
       <Navbar />
       <Home /> 
       <About />
