@@ -1,7 +1,7 @@
 import React from 'react';
 import myImage from '../components/Assets/akalya.png';
 import "./../styles/Home.css";
-import resumeImage from "../components/Assets/resume.pdf"
+
 
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
       </div>
       <div className='imageSection'>
       <img src={myImage} alt="profile" className="profileImage" />
-      <a href={resumeImage} target="_blank" rel="noopener noreferrer">
+      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
             <button className="resume">Resume</button> </a>
 </div>
     </div>
